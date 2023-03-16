@@ -8,9 +8,11 @@
 body{
     background-image: url(../dibujos/fondohumo.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
     color: aliceblue;
 }
+
 .header{
     background-color: rgba(106, 25, 90, 0.932);
     height: 80px;
