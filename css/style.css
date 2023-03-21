@@ -1,0 +1,112 @@
+*{
+    font-family: 'Libre Caslon Display', serif;
+    margin-right: 0%;
+}
+body{
+    background-image: url(../dibujos/fondohumo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    color: aliceblue;
+}
+.abs-center{
+    min-width: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    
+}
+
+.texto{
+    width: 500px;
+    font-size: 18px;
+}
+.row-navbar{
+    min-width: 100vh;
+    height: 50px;
+}
+.nav-link {
+    text-transform: uppercase;
+   
+}
+.nav-item{
+    padding-left: 20px;
+}
+.nav-link:hover {
+    border-bottom: 2px solid darkorchid;
+}
+.subtitulo{
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+}
+.second-color{
+    color: rgb(220, 9, 160);
+}
+.navbar-brand{
+    margin-left: 50px;
+    font-size: 25px;
+}
+
+.carousel{
+    padding-top: 50px;
+}
+
+footer{
+    position: fixed;
+}
+
+    
+.seguir{
+    margin-top: 150px;
+    text-align: center;
+    font-size: 18px;
+}
+.redes-container{
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+}
+.redes-container ul li{
+    margin: 0px 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+.redes-container ul li a{
+    background-color: black;
+    padding: 10px 10px;
+    color: aliceblue;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0px 3px 5px 0px black;
+}
+.redes-container ul li:hover{
+    transform: translateY(-3px) scale(1.05);
+}
+
+.mb-3{
+    margin-top: 10px;
+    justify-content: center;
+}
+.redes{
+    background-color: black;
+    padding: 10px 10px;
+    color: aliceblue;
+    margin-left: 0%;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0px 3px 5px 0px black;
+}
+.container-fluid-bg-dark{
+    padding-top: 10px;
+    display: flex;
+    position: fixed;
+    bottom: 0%;
+}
+.row.p-20{
+    margin-bottom: 150px;
+}
