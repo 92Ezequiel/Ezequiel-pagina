@@ -1,0 +1,278 @@
+@import "./variables";
+@import "./queries";
+
+
+*{
+    font-family: 'Libre Caslon Display', serif;
+    margin-right: 0%;
+}
+
+
+body{
+    background-image: url(../dibujos/fondohumo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    color: aliceblue;
+} 
+.row-navbar{
+    min-width: 100vh;
+    height: 50px;
+}
+.navbar-brand{
+    margin-left: 50px;
+    font-size: 25px;
+
+    .subtitulo{
+        font-size: 16px;
+        color: rgb(255, 255, 255);
+    }
+    .second-color{
+        color: $second-color;
+    }
+}
+.nav-item{
+    padding-left: 20px;
+
+    .nav-link{
+        text-transform: uppercase;
+    }
+
+    .nav-link:hover {
+        border-bottom: 2px solid darkorchid;
+    }
+
+}
+.abs-center{
+    min-width: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+}
+.texto{
+    width: 500px;
+    font-size: $font-size; 
+}
+.carousel{
+    padding-top: 50px;
+}
+.carousel-slide{
+    width: 400px; margin-right: 50px;
+}
+
+.footer{
+    background-color: #212529;
+    padding-top: 10px;
+    display: inline-block;
+    bottom: 0%;
+    width: 100%;
+
+    .footer-line{
+        text-align: center;
+        justify-content: space-evenly;
+    }
+
+    a{
+        background-color: black;
+        padding: 5px;
+        color: aliceblue;
+        margin-left: 0%;
+        line-height: 30px;
+        font-size: 16px;
+       
+        
+    }
+}
+
+.primal-galery{
+    margin-top: 150px;
+    text-align: center;
+    
+    
+    
+  .image{
+    width: 400px;
+    height: 500px;
+    padding: 10px;
+}
+}
+
+.productos{
+    margin-top: 150px;
+
+    .intro-productos{
+    width: 100%;
+    font-size: $font-size;
+    text-align: center;
+
+
+}
+    a{
+    text-decoration: none;
+    color: $second-color
+
+}
+} 
+
+.second-galery{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 100px;
+
+    
+    .imagen-venta1 {
+        border: 3px solid purple;
+        padding: 4px;
+        box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+
+        &:hover{
+       
+            transform: translateY(-3px) scale(1.05);
+            }
+        
+       
+    }
+
+    
+
+    .iglu{
+        width: 300px;
+        height: 400px;
+        box-shadow: 0 4px 8px 0 purple; 
+}
+
+.zetas{
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 4px 8px 0 purple; 
+}
+p{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.imagen-venta2{
+    @extend .imagen-venta1;
+    &:hover{
+       
+        transform: translateY(-3px) scale(1.05);
+        }
+}
+
+} 
+
+
+.retrato{
+    display: flex;
+    margin-top: 150px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    
+
+.retrato1{
+    width: 350px;
+    height: 600px;
+}
+p{
+    width: 350px;
+    font-size: 18px; 
+    padding-top: 100px;
+}
+}
+
+.musica{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+
+    p{
+        font-size: 18px;   
+    }
+}
+
+.seguir{
+    margin-top: 150px;
+    text-align: center;
+    font-size: 18px;
+}
+.redes-container{
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+    ul li{
+    margin: 0px 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    list-style: none;
+
+    &:hover{
+       
+        transform: translateY(-3px) scale(1.05);
+        }
+ } 
+     
+     
+
+    a{
+        background-color: black;
+    padding: 10px 10px;
+    color: aliceblue;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0px 3px 5px 0px black;
+    
+    }
+}
+.mb-3{
+    margin-top: 10px;
+    margin-bottom: 0%;
+    } 
+
+    @media (max-width: 1200px) {
+        .texto{
+            width: 400px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .second-galery{
+            display: block;
+            text-align: center;
+            .imagen-venta1{
+                border: none;
+                box-shadow: none;
+            }
+        }
+       .intro-productos{
+        width: 80%;
+       }
+       
+       
+    } 
+
+    @media (max-width: 992px) and (min-width: 768px) {
+        .abs-center{
+            margin-left: 0px;
+        }
+        
+    
+    }
+    @media (max-width: 576px) {
+        .abs-center{
+            margin-left: 30px;
+        }
+        
+        
+    }

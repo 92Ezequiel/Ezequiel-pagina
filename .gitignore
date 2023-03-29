@@ -47,12 +47,14 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,visualstudiocode
-.contacto.html
-.diseños-html
-.productos.html
-.index.html
-.sobre mi.html
-*.txt
-paginas
-cssoriginal
+/contacto.html
+/diseños-html
+/productos.html
+/index.html
+/sobre mi.html
+/txt
+/paginas
+/cssoriginal
+/bootstrap-5.0.2-dist.zip
+/package.json
 

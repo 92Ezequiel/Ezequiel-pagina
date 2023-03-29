@@ -1,112 +1,238 @@
-*{
-    font-family: 'Libre Caslon Display', serif;
-    margin-right: 0%;
+@media (max-width: 1200px) {
+  .texto {
+    width: 400px;
+  }
 }
-body{
-    background-image: url(../dibujos/fondohumo.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
-    background-size: cover;
-    color: aliceblue;
-}
-.abs-center{
-    min-width: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 150px;
-    margin-bottom: 100px;
-    
+* {
+  font-family: "Libre Caslon Display", serif;
+  margin-right: 0%;
 }
 
-.texto{
-    width: 500px;
-    font-size: 18px;
-}
-.row-navbar{
-    min-width: 100vh;
-    height: 50px;
-}
-.nav-link {
-    text-transform: uppercase;
-   
-}
-.nav-item{
-    padding-left: 20px;
-}
-.nav-link:hover {
-    border-bottom: 2px solid darkorchid;
-}
-.subtitulo{
-    font-size: 16px;
-    color: rgb(255, 255, 255);
-}
-.second-color{
-    color: rgb(220, 9, 160);
-}
-.navbar-brand{
-    margin-left: 50px;
-    font-size: 25px;
+body {
+  background-image: url(../dibujos/fondohumo.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  color: aliceblue;
 }
 
-.carousel{
-    padding-top: 50px;
+.row-navbar {
+  min-width: 100vh;
+  height: 50px;
 }
 
-footer{
-    position: fixed;
+.navbar-brand {
+  margin-left: 50px;
+  font-size: 25px;
+}
+.navbar-brand .subtitulo {
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+}
+.navbar-brand .second-color {
+  color: rgb(220, 9, 160);
 }
 
-    
-.seguir{
-    margin-top: 150px;
+.nav-item {
+  padding-left: 20px;
+}
+.nav-item .nav-link {
+  text-transform: uppercase;
+}
+.nav-item .nav-link:hover {
+  border-bottom: 2px solid darkorchid;
+}
+
+.abs-center {
+  min-width: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.texto {
+  width: 500px;
+  font-size: 18px;
+}
+
+.carousel {
+  padding-top: 50px;
+}
+
+.carousel-slide {
+  width: 400px;
+  margin-right: 50px;
+}
+
+.footer {
+  background-color: #212529;
+  padding-top: 10px;
+  display: inline-block;
+  bottom: 0%;
+  width: 100%;
+}
+.footer .footer-line {
+  text-align: center;
+  justify-content: space-evenly;
+}
+.footer a {
+  background-color: black;
+  padding: 5px;
+  color: aliceblue;
+  margin-left: 0%;
+  line-height: 30px;
+  font-size: 16px;
+}
+
+.primal-galery {
+  margin-top: 150px;
+  text-align: center;
+}
+.primal-galery .image {
+  width: 400px;
+  height: 500px;
+  padding: 10px;
+}
+
+.productos {
+  margin-top: 150px;
+}
+.productos .intro-productos {
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+}
+.productos a {
+  text-decoration: none;
+  color: rgb(220, 9, 160);
+}
+
+.second-galery {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  margin-bottom: 100px;
+}
+.second-galery .imagen-venta1, .second-galery .imagen-venta2 {
+  border: 3px solid purple;
+  padding: 4px;
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+}
+.second-galery .imagen-venta1:hover, .second-galery .imagen-venta2:hover {
+  transform: translateY(-3px) scale(1.05);
+}
+.second-galery .iglu {
+  width: 300px;
+  height: 400px;
+  box-shadow: 0 4px 8px 0 purple;
+}
+.second-galery .zetas {
+  width: 300px;
+  height: 400px;
+  box-shadow: 0 4px 8px 0 purple;
+}
+.second-galery p {
+  text-align: center;
+  text-transform: uppercase;
+}
+.second-galery .imagen-venta2:hover {
+  transform: translateY(-3px) scale(1.05);
+}
+
+.retrato {
+  display: flex;
+  margin-top: 150px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.retrato .retrato1 {
+  width: 350px;
+  height: 600px;
+}
+.retrato p {
+  width: 350px;
+  font-size: 18px;
+  padding-top: 100px;
+}
+
+.musica {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+.musica p {
+  font-size: 18px;
+}
+
+.seguir {
+  margin-top: 150px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.redes-container {
+  display: flex;
+  height: 50vh;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.redes-container ul li {
+  margin: 0px 5px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  list-style: none;
+}
+.redes-container ul li:hover {
+  transform: translateY(-3px) scale(1.05);
+}
+.redes-container a {
+  background-color: black;
+  padding: 10px 10px;
+  color: aliceblue;
+  line-height: 50px;
+  font-size: 18px;
+  box-shadow: 0px 3px 5px 0px black;
+}
+
+.mb-3 {
+  margin-top: 10px;
+  margin-bottom: 0%;
+}
+
+@media (max-width: 1200px) {
+  .texto {
+    width: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .second-galery {
+    display: block;
     text-align: center;
-    font-size: 18px;
+  }
+  .second-galery .imagen-venta1, .second-galery .imagen-venta2 {
+    border: none;
+    box-shadow: none;
+  }
+  .intro-productos {
+    width: 80%;
+  }
 }
-.redes-container{
-    display: flex;
-    height: 50vh;
-    justify-content: center;
-    align-items: center;
+@media (max-width: 992px) and (min-width: 768px) {
+  .abs-center {
+    margin-left: 0px;
+  }
 }
-.redes-container ul li{
-    margin: 0px 5px;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-}
-.redes-container ul li a{
-    background-color: black;
-    padding: 10px 10px;
-    color: aliceblue;
-    line-height: 50px;
-    font-size: 18px;
-    box-shadow: 0px 3px 5px 0px black;
-}
-.redes-container ul li:hover{
-    transform: translateY(-3px) scale(1.05);
+@media (max-width: 576px) {
+  .abs-center {
+    margin-left: 30px;
+  }
 }
 
-.mb-3{
-    margin-top: 10px;
-    justify-content: center;
-}
-.redes{
-    background-color: black;
-    padding: 10px 10px;
-    color: aliceblue;
-    margin-left: 0%;
-    line-height: 50px;
-    font-size: 18px;
-    box-shadow: 0px 3px 5px 0px black;
-}
-.container-fluid-bg-dark{
-    padding-top: 10px;
-    display: flex;
-    position: fixed;
-    bottom: 0%;
-}
-.row.p-20{
-    margin-bottom: 150px;
-}
+/*# sourceMappingURL=style.css.map */
