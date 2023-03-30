@@ -178,6 +178,7 @@ body {
 .redes-container {
   display: flex;
   height: 50vh;
+  margin-right: 40px;
   justify-content: center;
   text-align: center;
   align-items: center;
