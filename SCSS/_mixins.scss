@@ -1,0 +1,11 @@
+@mixin border{
+    border: 3px solid purple;
+    padding: 4px;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+}
+
+@mixin widht-height-word{
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 4px 8px 0 purple; 
+}
