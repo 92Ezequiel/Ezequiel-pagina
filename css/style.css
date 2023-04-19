@@ -41,7 +41,7 @@ body {
   transition-duration: 0.3s;
 }
 
-.abs-center {
+.principal {
   min-width: none;
   display: flex;
   align-items: center;
@@ -63,6 +63,22 @@ body {
 .carousel-slide {
   width: 400px;
   margin-right: 50px;
+}
+
+.filas {
+  display: flex;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.filas .imagen-prime {
+  width: 300px;
+  height: 400px;
+  opacity: 0.85;
+}
+.filas .texto-prime {
+  font-size: 25px;
+  padding-top: 50px;
 }
 
 .footer {
@@ -273,12 +289,30 @@ body {
     width: 400px;
   }
 }
+@media (max-width: 992px) and (min-width: 768px) {
+  .principal {
+    margin-top: 100px;
+  }
+  .principal .texto {
+    padding-left: 50px;
+  }
+  .fila-1 {
+    display: block;
+    text-align: center;
+    justify-content: center;
+  }
+  .texto-prime {
+    margin-top: 20px;
+    text-align: center;
+    padding-left: 50px;
+  }
+}
 @media (max-width: 768px) {
-  .abs-center {
+  .principal {
     margin-top: 100px;
     margin-left: 30px;
   }
-  .abs-center .texto {
+  .principal .texto {
     padding-left: 50px;
   }
   .intro-productos h2 {
@@ -296,20 +330,45 @@ body {
     width: 80%;
   }
 }
-@media (max-width: 992px) and (min-width: 768px) {
-  .abs-center {
-    margin-top: 100px;
-  }
-  .abs-center .texto {
-    padding-left: 50px;
-  }
-}
 @media (max-width: 576px) {
-  .abs-center {
-    margin-left: 30px;
+  .principal {
+    width: 80%;
   }
   .intro-productos h2 {
     margin-left: 50px;
+  }
+  .footer-line {
+    width: 100%;
+  }
+}
+@media (max-width: 510px) {
+  .principal {
+    width: 300px;
+    margin-top: 150px;
+  }
+  .texto {
+    width: 200px;
+    font-size: 23px;
+  }
+  .container .sobremi .retrato .retrato1 {
+    width: 270px;
+    height: 400px;
+  }
+  .container .sobremi .retrato .presentacion {
+    width: 300px;
+  }
+  .primal-galery .imagenes-diseño a {
+    width: 100%;
+    height: 250px;
+  }
+  .primal-galery .imagenes-diseño a .image {
+    width: 200px;
+    height: 250px;
+  }
+}
+@media (max-width: 380px) {
+  .primal-galery .imagenes-diseño a {
+    width: 300px;
   }
 }
 

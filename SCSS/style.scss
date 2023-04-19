@@ -44,7 +44,7 @@ body{
     }
 
 }
-.abs-center{
+.principal{
     min-width: none;
     display: flex;
     align-items: center;
@@ -62,7 +62,27 @@ body{
     padding-top: 50px;
 }
 .carousel-slide{
-    width: 400px; margin-right: 50px;
+    width: 400px;
+    margin-right: 50px;
+}
+    
+
+.filas{
+    display: flex;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    .imagen-prime{
+        width: 300px;
+        height: 400px;
+        opacity: 0.85;
+    }
+
+    .texto-prime{
+        font-size: 25px;
+        padding-top: 50px;
+    }
 }
 
 .footer{
