@@ -42,18 +42,17 @@ body {
 }
 
 .principal {
-  min-width: none;
   display: flex;
-  align-items: center;
+  margin-top: 150px;
+  padding: 20px;
   justify-content: center;
-  min-height: 100vh;
-  margin-top: 50px;
-  margin-bottom: 100px;
+  align-items: center;
 }
 
 .texto {
   width: 500px;
   font-size: 30px;
+  padding-top: 100px;
 }
 
 .carousel {
@@ -70,6 +69,8 @@ body {
   text-align: center;
   margin-top: 100px;
   margin-bottom: 100px;
+  margin-right: 0%;
+  margin-left: 0%;
 }
 .filas .imagen-prime {
   width: 300px;
@@ -332,9 +333,6 @@ body {
   }
 }
 @media (max-width: 576px) {
-  .principal {
-    width: 80%;
-  }
   .intro-productos h2 {
     margin-left: 50px;
   }
@@ -344,7 +342,6 @@ body {
 }
 @media (max-width: 510px) {
   .principal {
-    width: 300px;
     margin-top: 150px;
   }
   .texto {

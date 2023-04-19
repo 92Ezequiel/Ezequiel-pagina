@@ -45,18 +45,17 @@ body{
 
 }
 .principal{
-    min-width: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    margin-top: 50px;
-    margin-bottom: 100px;
+   display: flex;
+   margin-top: $margintop;
+   padding: 20px;
+   justify-content: center;
+   align-items: center;
     
 }
 .texto{
     width: 500px;
     font-size: 30px; 
+    padding-top: 100px;
 }
 .carousel{
     padding-top: 50px;
@@ -72,6 +71,8 @@ body{
     text-align: center;
     margin-top: 100px;
     margin-bottom: 100px;
+    margin-right: 0%;
+    margin-left: 0%;
 
     .imagen-prime{
         width: 300px;
