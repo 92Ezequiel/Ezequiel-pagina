@@ -296,10 +296,11 @@ body {
   .principal .texto {
     padding-left: 50px;
   }
-  .fila-1 {
+  .filas {
     display: block;
     text-align: center;
     justify-content: center;
+    margin-left: 100px;
   }
   .texto-prime {
     margin-top: 20px;
