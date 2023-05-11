@@ -1,18 +1,4 @@
 @charset "UTF-8";
-* {
-  font-family: "Libre Caslon Display", serif;
-  margin-right: 0%;
-}
-
-body {
-  background-image: url(../dibujos/fondohumo.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center center;
-  background-size: cover;
-  color: aliceblue;
-}
-
 .row-navbar {
   min-width: 100vh;
   height: 50px;
@@ -39,67 +25,6 @@ body {
 .nav-item .nav-link:hover {
   border-bottom: 2px solid darkorchid;
   transition-duration: 0.3s;
-}
-
-.principal {
-  display: flex;
-  margin-top: 150px;
-  padding: 20px;
-  justify-content: center;
-  align-items: center;
-}
-
-.texto {
-  width: 500px;
-  font-size: 30px;
-  padding-top: 100px;
-}
-
-.carousel {
-  padding-top: 50px;
-}
-
-.carousel-slide {
-  width: 400px;
-  margin-right: 50px;
-}
-
-.filas {
-  display: flex;
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  margin-right: 0%;
-  margin-left: 0%;
-}
-.filas .imagen-prime {
-  width: 300px;
-  height: 400px;
-  opacity: 0.85;
-}
-.filas .texto-prime {
-  font-size: 25px;
-  padding-top: 50px;
-}
-
-.footer {
-  background-color: #212529;
-  padding-top: 10px;
-  display: inline-block;
-  bottom: 0%;
-  width: 100%;
-}
-.footer .footer-line {
-  text-align: center;
-  justify-content: space-evenly;
-}
-.footer a {
-  background-color: black;
-  padding: 5px;
-  color: aliceblue;
-  margin-left: 0%;
-  line-height: 30px;
-  font-size: 16px;
 }
 
 .imagenes-diseño {
@@ -162,6 +87,81 @@ body {
   text-align: center;
   line-height: 30px;
   border-radius: 50%;
+}
+
+.footer {
+  background-color: #212529;
+  padding-top: 10px;
+  display: inline-block;
+  bottom: 0%;
+  width: 100%;
+}
+.footer .footer-line {
+  text-align: center;
+  justify-content: space-evenly;
+}
+.footer a {
+  background-color: black;
+  padding: 5px;
+  color: aliceblue;
+  margin-left: 0%;
+  line-height: 30px;
+  font-size: 16px;
+}
+
+* {
+  font-family: "Libre Caslon Display", serif;
+  margin-right: 0%;
+}
+
+body {
+  background-image: url(../dibujos/fondohumo.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  color: aliceblue;
+}
+
+.principal {
+  display: flex;
+  margin-top: 150px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto {
+  width: 500px;
+  font-size: 30px;
+  padding-top: 100px;
+}
+
+.carousel {
+  padding-top: 50px;
+}
+
+.carousel-slide {
+  width: 400px;
+  margin-right: 50px;
+}
+
+.filas {
+  display: flex;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 0%;
+  margin-left: 0%;
+}
+.filas .imagen-prime {
+  width: 300px;
+  height: 400px;
+  opacity: 0.85;
+}
+.filas .texto-prime {
+  font-size: 25px;
+  padding-top: 50px;
 }
 
 .productos {

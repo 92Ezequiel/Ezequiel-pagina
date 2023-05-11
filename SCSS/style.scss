@@ -1,11 +1,13 @@
 @import "./variables";
-
+@import "./header";
+@import "./imagestyle";
+@import "./redesstyle";
+@import "./footer";
 
 *{
     font-family: 'Libre Caslon Display', serif;
     margin-right: 0%;
 }
-
 
 body{
     background-image: url(../dibujos/fondohumo.jpg);
@@ -15,42 +17,12 @@ body{
     background-size: cover;
     color: aliceblue;
 } 
-.row-navbar{
-    min-width: 100vh;
-    height: 50px;
-}
-.navbar-brand{
-    margin-left: 50px;
-    font-size: 25px;
-
-    .subtitulo{
-        font-size: 16px;
-        color: rgb(255, 255, 255);
-    }
-    .second-color{
-        color: $second-color;
-    }
-}
-.nav-item{
-    padding-left: 20px;
-
-    .nav-link{
-        text-transform: uppercase;
-    }
-
-    .nav-link:hover {
-        border-bottom: 2px solid darkorchid;
-        transition-duration: 0.3s;
-    }
-
-}
 .principal{
    display: flex;
    margin-top: $margintop;
    padding: 20px;
    justify-content: center;
-   align-items: center;
-    
+   align-items: center; 
 }
 .texto{
     width: 500px;
@@ -64,121 +36,6 @@ body{
     width: 400px;
     margin-right: 50px;
 }
-    
-
-.filas{
-    display: flex;
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-right: 0%;
-    margin-left: 0%;
-
-    .imagen-prime{
-        width: 300px;
-        height: 400px;
-        opacity: 0.85;
-    }
-
-    .texto-prime{
-        font-size: 25px;
-        padding-top: 50px;
-    }
-}
-
-.footer{
-    background-color: #212529;
-    padding-top: 10px;
-    display: inline-block;
-    bottom: 0%;
-    width: 100%;
-
-    .footer-line{
-        text-align: center;
-        justify-content: space-evenly;
-    }
-
-    a{
-        background-color: black;
-        padding: 5px;
-        color: aliceblue;
-        margin-left: 0%;
-        line-height: 30px;
-        font-size: 16px;
-       
-        
-    }
-}
-
-.imagenes-diseño{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-    width: 95%;
-    margin: auto;
-    grid-gap: 10px;
-    padding: 20px 0px;
-    margin-top: $margintop;
-    margin-bottom: 50px;
-    text-align: center;
-    
-    a{
-        display: block;
-        position: relative;
-        overflow: hidden;
-        
-    }
-    
-    
-  .image{
-    width: 400px;
-    height: 500px;
-    vertical-align: top;
-    box-shadow: 0 4px 6px 0 black;
-    
-}
-}
-.light-box{
-    position: fixed;
-    top: 90px;
-    bottom: 50px;
-    left: 0;
-    background: rgba(0, 0, 0, .5);
-    transition: transform 0.3s ease-in-out;
-    width: 100%;
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: scale(0);
-}
-
-    
-
-.light-img {
-        width: 80vh;
-        max-height: 90vh;
-    }
-
-.light-box:target{
-        transform: scale(1);
-    }
-
-.close{
-        display: block;
-        position: absolute;
-        top: 10px;
-        right: 40px;
-        color: aliceblue;
-        background: purple;
-        text-decoration: none;
-        width: 30px;
-        height: 30px;
-        text-align: center;
-        line-height: 30px;
-        border-radius: 50%;
-    }
-
-
 
 .productos{
     margin-top: $margintop;
@@ -188,18 +45,14 @@ body{
     width: 100%;
     font-size: $font-size;
     text-align: center;
-
-
 }
     a{
     text-decoration: none;
     color: $second-color
-
 }
 } 
 
 @import "./mixins";
-
 
 .second-galery{
     display: flex;
@@ -207,8 +60,6 @@ body{
     margin-top: 20px;
     margin-bottom: 100px;
 
-
-    
     .imagen-venta1 img {
        @include border;
 
@@ -216,16 +67,10 @@ body{
        
             transform: $transform;
             }
-        
-       
     }
-
-    
-
     .iglu{
         @include widht-height-word; 
 }
-
     .zetas{
         @include widht-height-word; 
 }
@@ -248,10 +93,7 @@ body{
         transform: $transform;
         }
 }
-
 } 
-
-
 .retrato{
     display: flex;
     margin-top: $margintop;
@@ -280,49 +122,6 @@ p{
         font-size: $font-size; 
     }
 }
-
-.seguir{
-    margin-top: $margintop;
-    text-align: center;
-    font-size: 18px;
-}
-.redes-container{
-    display: flex;
-    height: 50vh;
-    margin-right: 40px;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    
-    ul li{
-    margin: 0px 5px;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    list-style: none;
-
-    &:hover{
-       
-        transform: $transform;
-        }
- } 
-     
-     
-
-    a{
-        background-color: black;
-    padding: 10px 10px;
-    color: aliceblue;
-    line-height: 50px;
-    font-size: $font-size;
-    box-shadow: 0px 3px 5px 0px black;
-    
-    }
-}
-.mb-3{
-    margin-top: 10px;
-    margin-bottom: 0%;
-    } 
 
 @import "./queries";
 

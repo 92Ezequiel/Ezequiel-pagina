@@ -1,0 +1,23 @@
+.footer{
+    background-color: #212529;
+    padding-top: 10px;
+    display: inline-block;
+    bottom: 0%;
+    width: 100%;
+
+    .footer-line{
+        text-align: center;
+        justify-content: space-evenly;
+    }
+
+    a{
+        background-color: black;
+        padding: 5px;
+        color: aliceblue;
+        margin-left: 0%;
+        line-height: 30px;
+        font-size: 16px;
+       
+        
+    }
+}
